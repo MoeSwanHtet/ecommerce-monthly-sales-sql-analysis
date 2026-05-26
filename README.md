@@ -5,6 +5,12 @@ This project focuses on extracting monthly sales data and analyzing Month-on-Mon
 ### 💼 Business Problem
 The management team needs a data-driven report to compare each month's total revenue directly with the previous month's performance. The objective is to identify which months experienced revenue growth or decline, without manually shifting rows in Excel.
 
+### 📊 Data Source
+The dataset used for this analysis is the **TheLook E-commerce** public dataset, hosted on **Google BigQuery**. 
+* **Source:** [Google Cloud Public Datasets - TheLook E-commerce](https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce)
+* **Dataset ID:** `bigquery-public-data.thelook_ecommerce`
+* **Table Used:** `warehouse2016.order_items` (Contains transaction records, sale prices, and shipping statuses)
+
 ### 🛠️ SQL Technical Approach
 To achieve a clean and optimized data extraction, the query utilizes advanced SQL techniques:
 * **Common Table Expressions (CTEs):** Used `with sale_2025 as (...)` to aggregate and filter data first, breaking down a complex problem into readable steps.
