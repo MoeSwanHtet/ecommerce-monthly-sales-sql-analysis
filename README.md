@@ -10,8 +10,8 @@ This project empowers business stakeholders to monitor regional performance, ana
 * **BI & Visualization:** Power BI Desktop
 
 ## 🖼️ Dashboard Preview
-> *Replace the placeholder link below with your actual dashboard screenshot image from your repository.*
-![E-Commerce Sales Dashboard](YOUR_IMAGE_LINK_HERE)
+<img width="1016" height="676" alt="image" src="https://github.com/user-attachments/assets/c562026e-c065-4096-9a61-22dcaa669688" />
+
 
 ---
 
