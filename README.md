@@ -6,11 +6,12 @@ This project empowers business stakeholders to monitor regional performance, ana
 
 ## 🛠️ Tech Stack & Tools
 * **Data Warehouse:** Google BigQuery
-* **Data Transformation:** SQL (CTEs, Window Functions, SAFE_CAST, Aggregations)
+* **Data Transformation:** SQL (CTEs, Window Functions, Aggregations)
 * **BI & Visualization:** Power BI Desktop
 
 ## 🖼️ Dashboard Preview
-<img width="1016" height="676" alt="image" src="https://github.com/user-attachments/assets/c562026e-c065-4096-9a61-22dcaa669688" />
+<img width="622" height="658" alt="image" src="https://github.com/user-attachments/assets/4718490f-01c3-407d-949c-a62f37c15daf" />
+
 
 
 ---
@@ -28,47 +29,47 @@ To maintain a high-performance and lightweight Power BI data model, data was pre
 The optimized database query code used to drive this entire report can be found below:
 
 ```sql
-WITH total_sale AS (
-    SELECT
-        usr.country,
-        SUM(SAFE_CAST(od.sale_price AS FLOAT64)) AS Total_sales_price,
-        FORMAT_TIMESTAMP('%m-%Y', od.created_at) AS sales_month,
-        COUNT(DISTINCT o.order_id) AS country_orders
-    FROM
-        warehouse2016.order_items AS od
-    INNER JOIN warehouse2016.orders AS o ON od.order_id = o.order_id
-    INNER JOIN warehouse2016.users AS usr ON usr.id = o.user_id
-    WHERE
-        FORMAT_TIMESTAMP('%Y', od.created_at) = '2025'
-    GROUP BY
-        usr.country,
-        FORMAT_TIMESTAMP('%m-%Y', od.created_at)
-),
-Rank_location AS (
-    SELECT
-        ts.country,
-        ts.sales_month,
-        ts.Total_sales_price,
-        ts.country_orders,
-        DENSE_RANK() OVER (
-            PARTITION BY ts.sales_month 
-            ORDER BY ts.Total_sales_price DESC
-        ) AS location_rank
-    FROM
-        total_sale AS ts
-)
-SELECT
-    fin.country,
-    fin.sales_month,
-    SUM(fin.Total_sales_price) AS total_monthly_revenue,
-    SUM(fin.country_orders) AS total_country_order,
-    fin.location_rank
-FROM
-    Rank_location AS fin
-GROUP BY
-    fin.sales_month,
-    fin.country,
-    fin.location_rank
-ORDER BY 
-    fin.sales_month, 
-    fin.location_rank;
+with total_sale as (
+select
+	usr.country,
+	sum(od.sale_price) as Total_sales_price,
+	FORMAT_TIMESTAMP('%B', od.created_at) AS sales_month,
+	COUNT(DISTINCT o.order_id) AS country_orders
+from
+	warehouse2016.order_items as od
+inner join warehouse2016.orders as o 
+on
+	od.order_id = o.order_id
+inner join warehouse2016.users as usr on
+	usr.id = o.user_id
+where
+	FORMAT_TIMESTAMP('%Y',od.created_at) = '2025'
+group by
+	sales_month,
+	country
+	),
+-------This CTE for Rank_location
+Rank_location as (
+select
+	ts.country,
+	ts.sales_month ,
+	ts.total_sales_price,
+	ts.country_orders,
+	DENSE_RANK() OVER (PARTITION BY ts.sales_month
+ORDER BY
+	ts.country DESC) AS location_rank
+from
+	total_sale as ts)
+select
+	fin.country,
+	fin.sales_month,
+	SUM(CAST(fin.Total_sales_price AS FLOAT64)) AS total_monthly_revenue,
+	SUM(fin.country_orders) as total_country_order,
+	fin.location_rank
+from
+	Rank_location as fin
+group by
+	sales_month,
+	fin.country,
+	fin.location_rank
+
