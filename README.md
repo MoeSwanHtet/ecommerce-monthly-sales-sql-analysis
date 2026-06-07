@@ -10,11 +10,8 @@ This project empowers business stakeholders to monitor regional performance, ana
 * **BI & Visualization:** Power BI Desktop
 
 ## 🖼️ Dashboard Preview
-<img width="622" height="658" alt="image" src="https://github.com/user-attachments/assets/4718490f-01c3-407d-949c-a62f37c15daf" />
+<img width="627" height="663" alt="image" src="https://github.com/user-attachments/assets/c93e7e94-fc63-439a-adf9-2e6723104315" />
 
-
-
----
 
 ## ⚙️ Data Pipeline & Transformation Process
 
@@ -48,7 +45,6 @@ group by
 	sales_month,
 	country
 	),
--------This CTE for Rank_location
 Rank_location as (
 select
 	ts.country,
