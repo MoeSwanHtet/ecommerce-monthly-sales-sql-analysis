@@ -12,6 +12,10 @@ This project empowers business stakeholders to monitor regional performance, ana
 ## 🖼️ Dashboard Preview
 <img width="627" height="663" alt="image" src="https://github.com/user-attachments/assets/c93e7e94-fc63-439a-adf9-2e6723104315" />
 
+## 📂 Project Structure
+* `Monthly Sale.csv` - The raw dataset used for this analysis.
+* `Monthly_Sales_and_location Report.pbix` - The core Power BI project file.
+
 ## ⚙️ Data Pipeline & Transformation Process
 
 ### Phase 1: Advanced SQL Engineering (BigQuery)
@@ -25,7 +29,6 @@ To maintain a high-performance and lightweight Power BI data model, data was pre
 The optimized database query code used to drive this entire report can be found below:
 
 ```sql
-----------This CTE calculate  for months and countrys
 with total_sale as (
 select
 	usr.country,
@@ -45,7 +48,6 @@ group by
 	sales_month,
 	country
 	),
--------This CTE for Rank_location
 Rank_location as (
 select
 	ts.country,
