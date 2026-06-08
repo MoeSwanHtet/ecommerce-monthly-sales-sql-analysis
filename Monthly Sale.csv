@@ -1,0 +1,150 @@
+Country ,Sales Month,Total Monthly Revenue,Total_Country_Order,Location_Rank
+United States,April,55787.54001,654,1
+United Kingdom,April,8703.420019,127,2
+Spain,April,8746.829996,111,3
+South Korea,April,11560.32,133,4
+Poland,April,225.5599995,6,5
+Japan,April,5936.88004,69,6
+Germany,April,10932.94003,122,7
+France,April,10820.23002,132,8
+China,April,77657.68005,944,9
+Brasil,April,30478.28005,361,10
+Belgium,April,2352.269999,30,11
+Australia,April,6410.330012,65,12
+United States,August,71092.01003,806,1
+United Kingdom,August,12355.55001,150,2
+Spain,August,11227.81002,132,3
+South Korea,August,13476.49002,155,4
+Poland,August,463.0100002,5,5
+Japan,August,6949.620005,86,6
+Germany,August,12463.90003,143,7
+France,August,14679.35004,190,8
+Colombia,August,12.77999973,1,9
+China,August,102102.4502,1151,10
+Brasil,August,42395.62003,502,11
+Belgium,August,1771.180005,31,12
+Australia,August,4641.490015,60,13
+United States,December,76747.2201,973,1
+United Kingdom,December,17866.52001,210,2
+Spain,December,12717.68004,146,3
+South Korea,December,19873.04,224,4
+Poland,December,311.7300048,8,5
+Japan,December,10099.19002,109,6
+Germany,December,15837.69001,177,7
+France,December,24433.03997,235,8
+Colombia,December,94.93000031,1,9
+China,December,121658.7202,1483,10
+Brasil,December,52936.75007,625,11
+Belgium,December,2394.439997,41,12
+Austria,December,22.98999977,1,13
+Australia,December,7620.489974,86,14
+United States,February,43993.58002,517,1
+United Kingdom,February,7999.140012,97,2
+Spain,February,8384.950022,97,3
+South Korea,February,10020.72998,115,4
+Poland,February,980.3699894,6,5
+Japan,February,5814.999997,55,6
+Germany,February,8341.750023,92,7
+France,February,7486.860031,101,8
+Colombia,February,271.9100037,1,9
+China,February,66034.99013,792,10
+Brasil,February,29435.50998,344,11
+Belgium,February,2352.54,30,12
+Australia,February,3914.110014,43,13
+United States,January,47624.94005,531,1
+United Kingdom,January,8100.10001,98,2
+Spain,January,7228.940005,94,3
+South Korea,January,16113.00003,154,4
+Poland,January,361.7799978,6,5
+Japan,January,4481.319996,59,6
+Germany,January,7894.640012,92,7
+France,January,13562.78,147,8
+China,January,64954.20006,782,9
+Brasil,January,31117.19001,364,10
+Belgium,January,4453.310019,40,11
+Australia,January,4334.969994,58,12
+United States,July,57499.3,685,1
+United Kingdom,July,11906.27,141,2
+Spain,July,9308.189982,118,3
+South Korea,July,13133.91003,169,4
+Poland,July,708.6900015,9,5
+Japan,July,6811.490031,75,6
+Germany,July,12536.83999,138,7
+France,July,10810.24001,129,8
+China,July,93786.60016,1093,9
+Brasil,July,40277.48004,455,10
+Belgium,July,4088.729995,37,11
+Australia,July,5547.920012,66,12
+United States,June,49602.70007,601,1
+United Kingdom,June,10219.73004,145,2
+Spain,June,8558.300012,116,3
+South Korea,June,9708.360035,142,4
+Poland,June,475.3399982,9,5
+Japan,June,8931.850022,93,6
+Germany,June,7867.660046,101,7
+France,June,11698.91002,145,8
+China,June,78182.61011,950,9
+Brasil,June,39903.66,446,10
+Belgium,June,3036.670016,37,11
+Australia,June,4188.899985,60,12
+United States,March,55476.30997,646,1
+United Kingdom,March,10627.02002,124,2
+Spain,March,9440.070019,104,3
+South Korea,March,9143.120001,137,4
+Poland,March,87.09999847,4,5
+Japan,March,6796.690034,76,6
+Germany,March,8762.250016,120,7
+France,March,13318.82006,142,8
+Colombia,March,31.98999977,1,9
+China,March,75463.38006,952,10
+Brasil,March,31767.71003,401,11
+Belgium,March,2338.289986,28,12
+Australia,March,4815.629992,61,13
+United States,May,56919.99002,669,1
+United Kingdom,May,9994.580002,143,2
+Spain,May,12201.68,128,3
+South Korea,May,13757.59001,153,4
+Poland,May,168.5,3,5
+Japan,May,5908.97,71,6
+Germany,May,9358.120026,118,7
+France,May,15240.56002,152,8
+China,May,81110.93003,964,9
+Brasil,May,32324.14002,392,10
+Belgium,May,2900.329996,37,11
+Australia,May,3834.380031,59,12
+United States,November,84655.50011,919,1
+United Kingdom,November,16703.26001,181,2
+Spain,November,11712.42,153,3
+South Korea,November,16253.85005,219,4
+Poland,November,263.9799995,5,5
+Japan,November,7527.480024,103,6
+Germany,November,13517.89,163,7
+France,November,15336.35,182,8
+China,November,117406.4402,1334,9
+Brasil,November,48945.05009,600,10
+Belgium,November,2364.480012,40,11
+Australia,November,7404.020045,88,12
+United States,October,70250.90009,816,1
+United Kingdom,October,17004.81,190,2
+Spain,October,11367.83002,139,3
+South Korea,October,15620.16007,180,4
+Poland,October,606.7700062,7,5
+Japan,October,9763.220011,86,6
+Germany,October,14113.34003,147,7
+France,October,15393.09004,181,8
+China,October,106925.7602,1292,9
+Brasil,October,43335.44009,507,10
+Belgium,October,3680.909985,43,11
+Australia,October,8855.750017,110,12
+United States,September,63305.44007,795,1
+United Kingdom,September,15954.94007,168,2
+Spain,September,10612.1,132,3
+South Korea,September,16063.49998,183,4
+Poland,September,710.010006,7,5
+Japan,September,10091.45001,100,6
+Germany,September,10750.54001,130,7
+France,September,15839.81002,181,8
+China,September,97526.38005,1135,9
+Brasil,September,40393.35999,482,10
+Belgium,September,5057.660021,58,11
+Australia,September,7407.88001,84,12
